@@ -1,4 +1,6 @@
-params.step = 0
+params {
+    step: Integer = 0
+}
 
 
 workflow{
@@ -11,7 +13,11 @@ workflow{
     }
 
     // Value channel
+<<<<<<< HEAD
     if (params.step == "00") {
+=======
+    if (params.step == 0) {
+>>>>>>> upstream/main
         out_ch = channel.value(1)
     }
 
@@ -23,9 +29,14 @@ workflow{
 
     // Task 1 - Create a channel that enumerates the numbers from 1 to 10
 
+<<<<<<< HEAD
     //if (params.step.toString().toInteger() == 1) {
     if (params.step == "1") {
         out_ch = channel.fromList(1..10)
+=======
+    if (params.step == 1) {
+        out_ch = channel.value("FOO")
+>>>>>>> upstream/main
     }
 
     // Task 2 - Create a channel that gives out the entire alphabet

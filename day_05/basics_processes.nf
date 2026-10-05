@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 params.step = "0"
 params.zip = 'zip'
+=======
+params {
+    step: Integer = 0
+    zip: String = 'zip'
+}
+>>>>>>> upstream/main
 
 
 process SAYHELLO {

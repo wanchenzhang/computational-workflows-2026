@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 params.step = "0"
+=======
+params {
+    step: Integer = 0
+}
+>>>>>>> upstream/main
 
 
 workflow{
